@@ -22,7 +22,7 @@ Example folder structure in nodejs project:
         `-- app.js
     |-- package.json
     |-- ecosystem.json     (we will create this in the following steps)
-    `-- Dockerfile   (we will create this in the following steps)
+    `-- Dockerfile         (we will create this in the following steps)
 ```
 
 ### Create a pm2 ecosystem file
@@ -67,6 +67,18 @@ EXPOSE 3000
 ENTRYPOINT [ "pm2-runtime","start","ecosystem.json" ]
 ```
 
+`node-prune` is a small tool to prune unnecessary files from `node_modules`,
+such as markdown, typescript source files, and so on written by [tj](https://github.com/tj)
+
+```bash
+$ node-prune path/to/node_modules
+
+files total 27,330
+files removed 3,990
+size removed 13 MB
+   duration 200ms
+```
+
 ### Build and run your image
 
 Follow `command` to build your Nodejs application:
@@ -75,3 +87,10 @@ Follow `command` to build your Nodejs application:
 docker build -t your-app-name:tag -f /path/to/Dockerfile .
 docker run your-app-name:tag
 ```
+
+## More Documentation
+The documentation of **PM2** can be found [here](https://pm2.keymetrics.io/docs/usage/docker-pm2-nodejs/)
+
+## Reference
+- [docker-pm2](https://github.com/keymetrics/docker-pm2)
+- [node-prune](https://github.com/tj/node-prune)
