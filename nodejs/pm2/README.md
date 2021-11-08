@@ -1,5 +1,8 @@
 # PM2 + node-prune
 
+![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ductnn/Dockerfile/pulls)
+
 NodeJS Docker image including the [PM2 runtime](https://pm2.keymetrics.io/) and
 tool pruning folder `node_modules` with [node-prune](https://github.com/tj/node-prune).
 
@@ -68,7 +71,7 @@ ENTRYPOINT [ "pm2-runtime","start","ecosystem.json" ]
 ```
 
 `node-prune` is a small tool to prune unnecessary files from `node_modules`,
-such as markdown, typescript source files, and so on written by [tj](https://github.com/tj)
+such as markdown, typescript source files. Written by [tj](https://github.com/tj)
 
 ```bash
 $ node-prune path/to/node_modules
@@ -91,6 +94,6 @@ docker run your-app-name:tag
 ## More Documentation
 The documentation of **PM2** can be found [here](https://pm2.keymetrics.io/docs/usage/docker-pm2-nodejs/)
 
-## Reference
+## References
 - [docker-pm2](https://github.com/keymetrics/docker-pm2)
 - [node-prune](https://github.com/tj/node-prune)
