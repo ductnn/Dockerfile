@@ -8,7 +8,7 @@ This repos contains all my custom `Dockerfile`
 ...
 
 ## Show your support
-Give a ⭐ if you like this application ❤️
+Give a ⭐ if you like this repo ❤️
 
 ## Contribution
 All contributions are welcomed in this project.
