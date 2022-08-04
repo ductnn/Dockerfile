@@ -118,7 +118,11 @@ use **[Basic Dockerfile](nextjs/blog-starter/.docker/basic.dockerfile)**:
 
 ```sh
 ➜  blog-starter git:(master) ✗ docker build -t blog-with-basic-dockerfile -f .docker/basic.dockerfile .
-...
+```
+
+![basic](asset/build-basic.png)
+
+```sh
 # Check docker images
 ➜  blog-starter git:(master) ✗ docker images
 REPOSITORY                                       TAG                               IMAGE ID       CREATED          SIZE
@@ -132,7 +136,11 @@ Next, we use multi-stage docker with **[Multi Stage Docker](nextjs/blog-starter/
 
 ```sh
 ➜  blog-starter git:(master) ✗ docker build -t blog-with-multistage-dockerfile -f .docker/multistage.dockerfile .
-...
+```
+
+![multi](asset/build-m.png)
+
+```sh
 # Check docker images
 ➜  blog-starter git:(master) ✗ docker images
 REPOSITORY                                           TAG                               IMAGE ID       CREATED           SIZE
@@ -170,7 +178,11 @@ Let's start with **[Dockerfile](nextjs/blog-starter/.docker/multistage_standalon
 
 ```sh
 ➜  blog-starter git:(master) ✗ docker build -t blog-with-multistage-standalone-dockerfile -f .docker/multistage_standalone.dockerfile .
-...
+```
+
+![standalone](asset/build-ms.png)
+
+```sh
 # Check docker images
 ➜  blog-starter git:(master) ✗ docker images
 REPOSITORY                                                      TAG                     IMAGE ID       CREATED           SIZE
