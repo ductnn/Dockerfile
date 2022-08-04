@@ -1,5 +1,7 @@
 # Optimize Dockerfile images for NextJS
 
+![Background](asset/nextjs-docker.png)
+
 NextJS Docker images is too big. So, this article will focus on the way optimize
 dockerfile for production. Here, i will use 2 ways for optimize docker images.
 
@@ -176,6 +178,8 @@ blog-with-multistage-standalone-dockerfile                      latest          
 ```
 
 **WoW! Great ...** The size of images is only **119MB**.
+
+![3 images](asset/3-images.png)
 
 So, I have presented 3 ways to optimize image size but ... it build verry **slow**.
 In the next post, i will show you how to build image faster.
