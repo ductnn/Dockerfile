@@ -2,7 +2,7 @@
 
 ![Background](asset/nextjs-docker.png)
 
-Docker image của `NextJS` thông thường size sẽ rất nặng. Bài viết này mình sẽ
+Docker image của `NextJS` thông thường size sẽ **rất lớn**. Bài viết này mình sẽ
 trình bày 2 cách mình hay sử dụng để tối ưu `image` trước khi triển khai lên môi
 trường *production*.
 
@@ -13,9 +13,8 @@ trường *production*.
 
 **Lưu ý**: Mình sẽ không tập trung nhiều về các cách cơ bản (như hạn chế tạo nhiều
 Layer, .dockerignore, ...) để tối ưu image, mà sẽ trình bày sâu vào 2 cách chính
-đã đề cập ở trên. Các bạn có thể theo dõi bài viết **[Tối ưu Docker image](https://viblo.asia/p/toi-uu-docker-image-Eb85o9D4Z2G)**
-của anh **[Mai Trung Đức](https://viblo.asia/u/maitrungduc1410)** để tham khảo
-thêm các cách để tối ưu docker image rất hay và chi tiết 😄
+đã đề cập ở trên. Các bạn có thể theo dõi bài viết **[Tối ưu Docker image](https://viblo.asia/p/toi-uu-docker-image-Eb85o9D4Z2G)** của anh **[Mai Trung Đức](https://viblo.asia/u/maitrungduc1410)**
+để tham khảo thêm các cách để tối ưu docker image rất hay và chi tiết 😄
 
 Oke !!! Vào thôi
 
@@ -233,7 +232,9 @@ cần thiết trong `packeage.json` và bỏ qua các `packages` trong phần `d
 mình không cần lo chạy lỗi vì mình đã `build` đầy đủ từ bước trên rồi. Nhưng mình
 vẫn muốn thằng `node_modules` nhẹ hơn ...
 
-![thamlam](asset/thamlam.jpeg)
+  <p align="center">
+    <img src="asset/thamlam.jpeg">
+  </p>
 
 Okies !!! Tiếp đó, mình sử dụng 1 chiếc *tool* để làm nhẹ đi `node_modules` tên
 là [node-prune](https://github.com/tj/node-prune), trong `base node image` ở `stage build`
@@ -283,7 +284,9 @@ Sau đó, chúng ta tiến hành build thử, ở `mode` này trong `folder .nex
 ra thêm 1 folder con tên là `standalone`. Trong đây, `NextJS` sẽ tự động `copy`
 các `files` và `packages` cần thiết để chạy, tham khảo [thêm](https://nextjs.org/docs/advanced-features/output-file-tracing)
 
-![standalone](asset/standalone.png)
+  <p align="center">
+    <img src="asset/standalone.png" width="500">
+  </p>
 
 Oke, bắt đầu viết `dockerfile`:
 
@@ -352,7 +355,6 @@ blog-with-multistage-standalone-dockerfile                      latest          
 **WoW** `image` build ra chỉ con **119MB** nhẹ đáng kể :v
 
 ![happy](asset/happy.webp)
-
 
 ## Kết
 Vậy là mình vừa trình bày 2 cách để tối ưu image cho dự án sử dụng `NextJS`. Anh
