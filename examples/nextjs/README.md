@@ -193,7 +193,7 @@ blog-with-multistage-standalone-dockerfile                      latest          
 
 ![3 images](asset/3-images.png)
 
-So, I have presented 3 ways to optimize image size but ... it build verry **slow**.
+So, I have presented 3 ways to optimize image size but ... it build very **slow**.
 In the next post, i will show you how to build image faster.
 
 **Thanks for reading** 😁😁😁
