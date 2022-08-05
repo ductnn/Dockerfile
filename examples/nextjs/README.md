@@ -2,7 +2,7 @@
 
 ![Background](asset/nextjs-docker.png)
 
-NextJS Docker images is too big. So, this article will focus on the way optimize
+NextJS Docker images is **too big**. So, this article will focus on the way optimize
 dockerfile for production. Here, i will use 2 ways for optimize docker images.
 
 ## Setup
