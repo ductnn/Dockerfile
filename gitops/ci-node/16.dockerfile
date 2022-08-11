@@ -10,6 +10,7 @@ RUN apk update \
 RUN apk add --no-cache --update nodejs nodejs-npm --repository=http://dl-cdn.alpinelinux.org/alpine/v3.16/main \
   && npm i yarn -g \
   && npm cache verify \
+  && apt-get clean \
   && rm -rf /var/cache/apk/* \
   && rm -rf ~/.cache
 
