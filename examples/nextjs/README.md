@@ -111,6 +111,7 @@ README.md
 LICENSE
 .docker
 .gitlab
+.git
 ```
 
 We have 3 scenarios `dockerfile` in [here](blog-starter/.docker/). First, i'll
