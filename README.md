@@ -24,4 +24,4 @@ Give a ⭐ if you like this repo ❤️
 All contributions are welcomed in this project.
 
 ## License
-The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
+Please see [LICENSE](LICENSE) for more information.
