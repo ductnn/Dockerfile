@@ -9,13 +9,9 @@ This repos contains all my custom `Dockerfile`
 
 ## Images
 
-* **[NodeJS](https://github.com/ductnn/Dockerfile/blob/master/nodejs/node/16/alpine/Dockerfile)** - NodeJS images with base `alpine` and package `node-prune`.
-* **[PM2](https://github.com/ductnn/Dockerfile/blob/master/nodejs/pm2/16/alpine/Dockerfile)** - PM2 images with base `alpine` and package `node-prune`, more [docs](https://github.com/ductnn/Dockerfile/tree/master/nodejs/pm2).
-* **[NextJS](https://github.com/ductnn/Dockerfile/tree/master/nextjs)** - Build images `nextjs` for production with [Multi Stage](nextjs/multi-stage/multistage.dockerfile) and [Mode Standalone](nextjs/multi-stage/multistage_standalone.dockerfile).
-* **[Helm](https://github.com/ductnn/Dockerfile/blob/master/alpine/helm/3.8.0.dockerfile)** - Helm images with `aws` packages.
-* **[Backup MysqlDB to s3](https://github.com/ductnn/Dockerfile/tree/master/mysql/backup-to-s3)** - Backup MySQL to S3.
-
-...updating...
+  <p align="center">
+    <img src="assets/funy.gif" width="650">
+  </p>
 
 ## Show your support
 Give a ⭐ if you like this repo ❤️
